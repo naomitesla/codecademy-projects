@@ -18,20 +18,19 @@ func main(){
     grade = 100
 
 
-    f.Println(title,
-             "\n", "(", year, ",", pageNumber, ",", grade, ")", "\n",
-             "published by", publisher, "\n",
-             "also written by", writer, "\n",
+    f.Println("\n" + title)
+    f.Printf("(%d, %d, %.0f)", year, pageNumber, grade)
+    f.Println("\n" + "published by", publisher, "\n" +
+             "also written by", writer, "\n" + 
              "yet again drawn by", artist, "\n")
 
-    title = "hmmm, i wonder how i concat ints and strings without spaces, prob an inline type recast or something :o"
+    title = "hmmm, i wonder how i concat ints and strings without spaces (i figuredd it outt!!)"
     pageNumber = 1
-    grade = 50
+    grade = 100
 
-    f.Println(title,
-             "\n", "(", year, ",", pageNumber, ",", grade, ")", "\n",
-             "published by", publisher, "\n",
-             "also written by", writer, "\n",
-             "yet again drawn by", artist)
-
+    f.Println(title)
+    f.Printf("(%d, %d, %.0f)", year, pageNumber, grade)
+    f.Println("\n" + "published by", publisher, "\n" +
+             "also written by", writer, "\n" + 
+             "yet again drawn by", artist, "\n")
 }
