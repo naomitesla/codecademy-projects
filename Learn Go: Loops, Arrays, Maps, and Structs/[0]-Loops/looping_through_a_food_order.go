@@ -16,7 +16,7 @@ import (
 
 func askOrder() (string) {
     var input string
-    f.Print("What would you like to eat: ")
+    f.Print("whaddyaa wantttt?? c: > ")
     scanner := bufio.NewScanner(os.Stdin)
     scanner.Scan()
     input = scanner.Text()
