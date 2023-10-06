@@ -47,7 +47,7 @@ func main() {
     }
 
     f.Println("...")
-    var amtStolen int32
+    var amtStolen int
     switch leftSafely {
     case 0:
         f.Println("ooo nyooo!! D:")
@@ -66,7 +66,7 @@ func main() {
     default:
         if isHeistOn {
             f.Println("YAYYYYYYYY!!! WE GOT OUT AND IT WASN'T EVEN UMM *THAT* SCARYY!! :D")
-            amtStolen = int32(10000 + rand.Intn(1000000))
+            amtStolen = 10000 + rand.Intn(1000000)
         } else {
             f.Println("well at least we made it out okieee c:")
         }
